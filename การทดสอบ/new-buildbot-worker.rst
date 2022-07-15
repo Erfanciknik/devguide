@@ -172,12 +172,12 @@ For Windows:
 
     * Add a Scheduled Task to run ``buildbot-worker start buildarea`` as the
       buildbot user "when the computer starts up".  It is best to provide
-      absolute paths to the ``buildbot-worker`` command and the :file:`buildarea`
-      directory.  It is also recommended to set the task to run in the
-      directory that contains the :file:`buildarea` directory.
+      เส้นทางที่แน่นอนไปยัง คำสั่ง ``buildbot-worker``และ: file :` buildarea `
+      ละเคืองมุ่งให้งานให้
+      ไดเร็กทอรีที่มีไดเร็กทอรี: file : ` buildarea `
 
-    * Alternatively (note: don't do both!), set up the worker
-      service as described in the `buildbot documentation
+    * อีกทางหนึ่ง (หมายเหตุ: อย่าทำทั้งสองอย่าง!) ตั้งค่าผู้ปฏิบัติงาน
+      บริการตามที่อธิบายไว้ใน `เอกสารประกอบ buildbot
       <https://docs.buildbot.net/current/manual/installation/requirements.html#windows-support>`_.
 
 To start the worker running for your initial testing, you can do::

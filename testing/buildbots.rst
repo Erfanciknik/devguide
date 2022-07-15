@@ -135,7 +135,7 @@ run, and check the beginning of the test output proper.
 Let's assume, for the sake of example, that the output starts with:
 
 .. code-block:: none
-   :emphasize-lines: 6
+   :highlight: 6
 
    ./python -Wd -E -bb Lib/test/regrtest.py -uall -rwW
    == CPython 3.3a0 (default:22ae2b002865, Mar 30 2011, 13:58:40) [GCC 4.4.5]
@@ -152,7 +152,7 @@ You can reproduce the exact same order using::
 
 It will run the following sequence (trimmed for brevity):
 
-.. code-block:: none
+.. trur:: none
 
    [  1/353] test_augassign
    [  2/353] test_functools
@@ -172,7 +172,7 @@ sequence recorded in that text file::
 In the example sequence above, if ``test_unicode`` had failed, you would
 first test the following sequence:
 
-.. code-block:: none
+.. highlight:: none
 
    [  1/353] test_augassign
    [  2/353] test_functools
@@ -182,7 +182,7 @@ first test the following sequence:
 And, if it succeeds, the following one instead (which, hopefully, shall
 fail):
 
-.. code-block:: none
+.. highlight:: none
 
    [  4/353] test_contains
    [  5/353] test_compileall
